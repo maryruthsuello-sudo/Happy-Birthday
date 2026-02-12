@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Janelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: pink;
+      margin: 0;
+      font-family: 'Pixelify Sans', sans-serif;
+      color: white;
+      position: relative;
+    }
+
+    /* ===== LAYOUT WRAPPER ===== */
+    .wrapper {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    /* ===== LEFT & RIGHT IMAGE STRIPS ===== */
+    .strip {
+      display: flex;
+      flex-direction: column; /* always vertical */
+      gap: 10px;
+    }
+
+    .strip img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* ===== CENTER TEXT ===== */
+    .content {
+      text-align: center;
+      max-width: 500px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box {
+      background: rgba(255, 105, 180, 0.65);
+      padding: 30px 20px;
+      border-radius: 20px;
+      line-height: 1.6;
+      font-size: 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .text-box p {
+      margin-bottom: 20px;
+    }
+
+    /* BUTTON */
+    .img-btn {
+      position: relative;
+      margin-top: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .img-btn img {
+      width: 150px;
+    }
+
+    .img-btn span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* ===== PHONE FORMAT ===== */
+    @media(max-width: 768px) {
+      .wrapper {
+        flex-direction: column; /* stack all sections vertically */
+        align-items: center;
+      }
+
+      .strip {
+        width: 80%;  /* narrower on phone */
+      }
+
+      .text-box {
+        font-size: 18px; /* smaller text for phone */
+      }
+
+      .img-btn img {
+        width: 120px; /* smaller button */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+
+    <!-- CENTER TEXT -->
+    <div class="content-overlay">
+      <div class="text-box">
+        <p>Happy Birthday Janelle!! Time really flies 'no? Parang no'ng 2022 lang takot pa ako sayo HAHAHA. Simpleng "Ano name mo?", "Saang school ka galing?" turned into 4 years (and counting) of friendship.</p>
+        <p>Within those 4 years, you've not just been a good friend to me but also a good mother. MOTHER?! HAHAHHAH eme. Kidding aside teh, sobrang thankful ako na nakilala kita. Paulit-ulit ko 'tong sinsabi pero sasabihin ko ulit, I had nobody nung SHS pero you were there. I've never felt so heard and appreciated pag andyan presence mo huhuhu.</p>
+        <p>Minsan-madalas nga, namimiss ko yung mga panahon na seatmates pa tayo, random chikahan, random rant, manghusga ng tao, mag soundtrip and share ng earphones, bibili ng ice cream sa canteen, kumanta ng "I want it that way", and magkopyahan HAHAHAHA. Nakakamiss din yung mga panahon na ni-rragebait kita. Sana miss mo na rin na yung pikon mo, sa akin pa nanggagaling HAHAHAHA</p>
+        <p>Thank you nga rin pala sa walang sawang pakikinig sa mga pointless, useless rants ko, o di kaya naman sa katorpehan ko na sana naman ay di ka nagsasawa HAHAHAHA</p>
+        <p>ANYWAY, as you turn 20, I wish you nothing but the best in life, sa school, friends, social life, academics, sa mga profs niyo HAHAHA, sa love life mo ayieeeee. I wish na maging smooth and journey mo in life lalo na this 20s, a new chapter. Although we know that 20s era is going to be tough, just remember na andito ako and I'm ready to be a part of it.</p>
+        <p>OH AND BTW, gusto kita paiyakin kaya ito yung music HAHAHAHA</p>
+        <p>Once again, Happy Birthday Janelle!!</p>
+        <p>-Ruth</p>
+      </div>
+
+      <button class="img-btn" onclick="location.href='page3.html'">
+        <img src="pinkButton-removebg-preview.png">
+        <span style="color: white">Next</span>
+      </button>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html>
