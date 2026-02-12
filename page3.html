@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Janelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: pink;
+      margin: 0;
+      font-family: 'Pixelify Sans', sans-serif;
+      color: white;
+      position: relative;
+    }
+
+    /* ===== LAYOUT WRAPPER ===== */
+    .wrapper {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    /* ===== LEFT & RIGHT IMAGE STRIPS ===== */
+    .strip {
+      display: flex;
+      flex-direction: column; /* always vertical */
+      gap: 10px;
+    }
+
+    .strip img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* ===== CENTER TEXT ===== */
+    .content {
+      text-align: center;
+      max-width: 500px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box {
+      background: rgba(255, 105, 180, 0.65);
+      padding: 30px 20px;
+      border-radius: 20px;
+      line-height: 1.6;
+      font-size: 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .text-box p {
+      margin-bottom: 20px;
+    }
+
+    /* BUTTON */
+    .img-btn {
+      position: relative;
+      margin-top: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .img-btn img {
+      width: 150px;
+    }
+
+    .img-btn span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* ===== PHONE FORMAT ===== */
+    @media(max-width: 768px) {
+      .wrapper {
+        flex-direction: column; /* stack all sections vertically */
+        align-items: center;
+      }
+
+      .strip {
+        width: 80%;  /* narrower on phone */
+      }
+
+      .text-box {
+        font-size: 18px; /* smaller text for phone */
+      }
+
+      .img-btn img {
+        width: 120px; /* smaller button */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio autoplay loop>
+    <source src="somewhere only we know - rhianne (cover).mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="wrapper">
+
+    <!-- LEFT VERTICAL STRIP -->
+    <div class="strip">
+      <img src="me&Janelle (1).jpg">
+      <img src="me&Janelle (2).jpg">
+      <img src="me&Janelle (3).jpg">
+      <img src="me&Janelle (4).jpg">
+      <img src="me&Janelle (5).jpg">
+      <img src="me&Janelle (6).jpg">
+      <img src="me&Janelle (7).jpg">
+      <img src="me&Janelle (8).jpg">
+      <img src="me&Janelle (9).jpg">
+      <img src="me&Janelle (10).jpg">
+      <img src="me&Janelle (11).jpg">
+      <img src="me&Janelle (12).jpg">
+      <img src="me&Janelle (13).jpg">
+    </div>
+
+    <!-- RIGHT VERTICAL STRIP -->
+    <div class="strip">
+      <img src="me&Janelle (14).jpg">
+      <img src="me&Janelle (15).jpg">
+      <img src="me&Janelle (16).jpg">
+      <img src="me&Janelle (17).jpg">
+      <img src="me&Janelle (18).jpg">
+      <img src="me&Janelle (19).jpg">
+      <img src="me&Janelle (20).jpg">
+      <img src="me&Janelle (21).jpg">
+      <img src="me&Janelle (22).jpg">
+      <img src="me&Janelle (23).jpg">
+      <img src="me&Janelle (24).jpg">
+      <img src="me&Janelle (25).jpg">
+      <img src="me&Janelle (26).jpg">
+    </div>
+
+
+      <button class="img-btn" onclick="location.href='index.html'">
+        <img src="pinkButton-removebg-preview.png">
+        <span style="color: white">Finish</span>
+      </button>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html>
