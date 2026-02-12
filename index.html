@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Janelle!</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+  /* ===== BODY ===== */
+  body {
+    background-color: pink;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* scrollable */
+    min-height: 100vh;
+    color: white;
+  }
+
+  /* ===== CONTAINER ===== */
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px; /* safe for phones */
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  /* ===== HEADER ===== */
+  h1 {
+    font-size: clamp(24px, 6vw, 48px); /* responsive font size */
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  /* ===== IMAGE PANEL ===== */
+  .panel {
+    background: rgba(255, 105, 180, 0.3); /* light pink overlay */
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(4px);
+  }
+
+  .panel img {
+    width: 100%;
+    max-width: 400px; /* limit large images */
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ===== BUTTON ===== */
+  .img-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .img-btn img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-btn span {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: clamp(14px, 4vw, 17px); /* responsive text on button */
+    pointer-events: none;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .img-btn:hover { opacity: 0.85; }
+  .img-btn:active { transform: scale(0.95); }
+
+  /* ===== OPTIONAL TYPING EFFECT ===== */
+  #typing-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* ===== RESPONSIVE FOR SMALL PHONES ===== */
+  @media (max-width: 400px) {
+    h1 {
+      font-size: clamp(20px, 7vw, 36px);
+    }
+
+    .panel {
+      padding: 15px;
+    }
+
+    .img-btn img {
+      width: 120px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Happy 20th Birthday Janelle!</h1>
+
+    <div class="panel">
+      <img src="Janelle_1.jpg" alt="Janelle's Picture">
+    </div>
+
+    <button class="img-btn" onclick="location.href='page1.html'">
+      <img src="pinkButton-removebg-preview.png" alt="Click Button">
+      <span>Click Here</span>
+    </button>
+  </div>
+
+</body>
+</html>

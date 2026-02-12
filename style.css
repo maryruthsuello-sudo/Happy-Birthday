@@ -1,0 +1,86 @@
+body {
+  background-color: pink;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 150px; /* columns shrink nicely on small screens */
+  max-width: 300px; /* optional limit for readability */
+}
+
+.column img {
+  width: 100%;       /* responsive images */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-column {
+  max-width: 400px;  /* prevent text from stretching too wide */
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.img-btn {
+  display: inline-flex;           /* flex container */
+  justify-content: center;        /* horizontal center */
+  align-items: center;            /* vertical center */
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.img-btn img {
+  width: 150px;        /* fixed size to keep text relative */
+  height: auto;
+  display: block;
+}
+
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 768px) {
+  .text-box{
+    font-size:20px;  /* phone version ng font */
+}
+}
+
+
+
+ .img-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;   /* fixed size para di lumobo */
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+}
+
+/* Mobile scaling for small phones */
+@media (max-width: 320px) {
+  .img-btn span {
+    font-size: 1rem;
+  }
+}
