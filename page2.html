@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
 <style>
-
 body{
   background-color: pink;
   margin:0;
@@ -22,49 +21,52 @@ body{
 .wrapper{
   display:flex;
   position:relative;
+  justify-content:center;
+  align-items:flex-start;
+  gap:20px;
 }
 
 /* ===== LEFT & RIGHT IMAGE STRIPS ===== */
 .strip{
-  width:25%;
   display:flex;
-  flex-direction:column;
+  flex-direction:column; /* always vertical */
+  gap:10px;
 }
 
 .strip img{
   width:100%;
   height:auto;
   object-fit:cover;
+  border-radius:10px;
 }
 
 /* ===== CENTER TEXT ===== */
 .content{
   text-align: center;
-  width:50%;
-  padding:60px 20px;
+  max-width:500px;
+  padding:20px;
   display:flex;
   flex-direction:column;
   align-items:center;
 }
 
 .text-box{
-  position: center;
   background:rgba(255,105,180,0.65);
-  padding:40px 25px;
+  padding:30px 20px;
   border-radius:20px;
   line-height:1.6;
-  font-size:31px;
+  font-size:24px;
   backdrop-filter:blur(4px);
 }
 
 .text-box p{
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 /* BUTTON */
 .img-btn{
   position:relative;
-  margin-top:40px;
+  margin-top:30px;
   background:none;
   border:none;
   cursor:pointer;
@@ -76,35 +78,31 @@ body{
 
 .img-btn span{
   position:absolute;
-  top:45%;
+  top:50%;
   left:50%;
   transform:translate(-50%,-50%);
   font-weight:bold;
+  color:white;
+  font-size:18px;
 }
 
 /* ===== PHONE FORMAT ===== */
 @media(max-width:768px){
-
   .wrapper{
-    flex-direction:column;
+    flex-direction:column; /* stack all sections vertically */
+    align-items:center;
   }
 
   .strip{
-    width:100%;
-    flex-direction:column;   /* make images vertical */
-  }
-
-  .strip img{
-    width:100%;
-  }
-
-  .content{
-    width:100%;
-    padding:30px 15px;
+    width:80%;  /* narrower on phone */
   }
 
   .text-box{
-    font-size:16px;
+    font-size:18px; /* smaller text for phone */
+  }
+
+  .img-btn img{
+    width:120px; /* smaller button */
   }
 }
 </style>
