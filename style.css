@@ -84,3 +84,74 @@ body {
     font-size: 1rem;
   }
 }
+
+.image-container {
+  position: relative; /* important para ang overlay-text ay naka-base dito */
+  width: 300px;       /* o anumang size gusto mo */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* optional */
+}
+
+.overlay-text {
+  position: absolute; /* nag-o-overlay sa image */
+  top: 50%;           /* center vertically */
+  left: 50%;          /* center horizontally */
+  transform: translate(-50%, -50%);
+  background: rgba(255, 105, 180, 0.65); /* pink semi-transparent */
+  padding: 15px 20px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 24px;    /* adjust as needed */
+  line-height: 1.4;
+  backdrop-filter: blur(4px); /* optional, para mag-blur ng image sa ilalim */
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.strip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.strip img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== TEXT OVERLAY ===== */
+.content-overlay {
+  position: absolute; /* nasa ibabaw ng images */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.text-box {
+  background: rgba(255, 105, 180, 0.5); /* semi-transparent pink */
+  padding: 30px 20px;
+  border-radius: 20px;
+  line-height: 1.6;
+  font-size: 24px;
+  backdrop-filter: blur(4px); /* blur effect para mas readable */
+  text-align: center;
+  color: white;
+}
